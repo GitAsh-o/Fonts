@@ -172,9 +172,9 @@ header h2{
 }
 
 .how{
-  display: block;
+  display: flex;
+  justify-content: center;
   height: 180px;
-  margin: 0 auto;
 }
 
 .small {

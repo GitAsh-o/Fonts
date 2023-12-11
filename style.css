@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "Nicomoji Plus";
+  src: url("font/nicomoji-plus_v2.ttf") format("truetype");
+}
+
+/* ===== Webサイト全体のスタイル ===== */
+/* html */
+html {
+  height: 100%;
+}
+
+.navi{
+  background-color: #c4b59d;
+  padding: 25px;
+}
+
+.navi ul{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.navi li{
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 40px;
+  transform: scale(1);
+  transition:0.3s;
+}
+
+.navi li:hover{
+  transform: scale(1.2);
+  transition:0.3s;
+}
+
+.navi a{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Nicomoji Plus";
+  background-color: #cfc4b4;
+  border-radius: 40px;
+  padding: 10px 20px 10px 20px;
+  width: 150px;
+  box-shadow: 0px 4px 7px #7a6a5a;
+}
+
+/* body */
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* h1見出し */
+h1 {
+  display: block;
+  color: #fff;/* フォントの色 */
+  font-size: 90px;/* フォントの大きさ */
+  font-family: "Nicomoji Plus";/* フォントの種類 */
+  text-align: center;/* 文字・画像を中央にそろえる */
+  text-shadow: 0px 8px 9px #c4b59d, 0px -2px 1px #fff;
+  animation-name:fadeUpAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+h2 {
+  display: block;
+  color: #fff;/* フォントの色 */
+  font-size: 40px;/* フォントの大きさ */
+  font-family: "Nicomoji Plus";/* フォントの種類 */
+  text-align: center;
+  text-shadow: 0px 8px 9px #c4b59d, 0px -2px 1px #fff;
+  animation-name:fadeUpAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+h3 {
+  display: block;
+  color: #663300;
+  font-size: 20px;
+  font-family: "Nicomoji Plus";
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  color: #663300;
+  font-size: 14px;
+  text-align: center;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダーの箱 */
+header {
+  background-color: #f1ebe5;/* 背景画像 */
+  height: 550px;/* 高さ */
+  padding-top: 200px;/* 上がわの余白 */
+  background-repeat: no-repeat;
+}
+
+header h2{
+  animation-delay: 1.0s;
+}
+
+/* ===== お店紹介のスタイル ===== */
+/* セクション */
+.profile {
+  background-color: #f1ebe5;/* 背景の色 */
+  color: #663300;
+  padding: 30px;
+}
+
+.fade-in{
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* h2見出し */
+.title {
+  font-size: 30px;
+  padding-left: 15px;
+  margin-bottom: 50px;
+}
+
+/* 画像 */
+.profile img{
+  float: right;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 9px #c4b59d, 0px -2px 1px #fff;
+}
+
+/* リスト */
+.profile div {
+  font-size: 24px;
+  background-color: #ffffff;
+  padding: 30px;
+  height: 360px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 9px #c4b59d, 0px -2px 1px #fff;
+}
+
+.profile br{
+  display: block;
+  content: "";
+  padding: 7.5px;
+}
+
+/* セクション */
+.explain {
+  padding: 30px;
+  background-color: #f1ebe5;
+}
+
+.how{
+  display: block;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.small {
+  display: block;
+  float: left;
+  background-color: #fff;
+  box-shadow: 0px 8px 9px #c4b59d, 0px -2px 1px #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  height: 100px;
+}
+
+.big{
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 8px 9px #c4b59d, 0px -2px 1px #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+  width: 780px;
+}
+
+.end {
+  padding: 30px;
+  background-color: #f1ebe5;
+}
+
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #663300;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+  width: auto;
+}
